@@ -1,0 +1,42 @@
+<div class="flex justify-content-between">
+  <h2>Products</h2>
+  <p-button label="Add Product" (click)="showAddModal()"></p-button>
+</div>
+<p-table [value]="products" [tableStyle]="{ 'min-width': '50rem' }"  [paginator]="true"
+[rows]="5">
+  <ng-template pTemplate="header">
+      <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>ExpirationDate</th>
+          <th>ManufacturingDate</th>
+          <th>Perishable</th>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-product>
+      <tr>
+          <td>{{ product.id }}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.quantity }}</td>
+          <td>{{ product.price }}</td>
+          <td>{{ product.expirationDate }}</td>
+          <td>{{ product.manufacturingDate }}</td>
+          <td>{{ product.perishable }}</td>
+      </tr>
+  </ng-template>
+</p-table>
+
+
+<!--<p-dialog header="Header" [(visible)]="displayAddModal" [modal]="true" [style]="{ width: '50vw' }" [draggable]="false" [resizable]="false">
+  <p class="m-0">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <ng-template pTemplate="footer">
+        <p-button (click)="displayAddModal = false" label="Cancel" styleClass="p-button-text"></p-button>
+      </ng-template>
+</p-dialog> -->
+
+<app-add-edit-product [displayAddModal]="displayAddModal" (clickClose)="hideAddModal($event)"></app-add-edit-product>
