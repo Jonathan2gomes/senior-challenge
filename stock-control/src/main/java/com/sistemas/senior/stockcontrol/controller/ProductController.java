@@ -23,7 +23,7 @@ public class ProductController {
     @GetMapping("/")
     @Operation(summary = "Get all products",description = "Get all products")
     public ResponseEntity getProducts() {
-        return ResponseEntity.ok(service.getAllItems());
+        return ResponseEntity.ok(service.getAllProducts());
     }
 
     @GetMapping("/{id}")

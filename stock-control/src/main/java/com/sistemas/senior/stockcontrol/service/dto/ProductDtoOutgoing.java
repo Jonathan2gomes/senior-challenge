@@ -16,6 +16,16 @@ public class ProductDtoOutgoing {
     public ProductDtoOutgoing() {
     }
 
+    public ProductDtoOutgoing(Long id, String name, String quantity, BigDecimal price, boolean isPerishable, LocalDate expirationDate, LocalDate manufacturingDate) {
+        this.id = id;
+        this.name = name;
+        this.quantity = quantity;
+        this.price = price;
+        this.isPerishable = isPerishable;
+        this.expirationDate = expirationDate;
+        this.manufacturingDate = manufacturingDate;
+    }
+
     public Long getId() {
         return id;
     }

@@ -20,7 +20,18 @@ public class ProductDtoIncoming {
     private LocalDate expirationDate;
     @NotBlank
     private LocalDate manufacturingDate;
-    @NotBlank
+
+    public ProductDtoIncoming(String name, MeasureUnit measureUnit, String quantity, BigDecimal price, Boolean isPerishable, LocalDate expirationDate, LocalDate manufacturingDate) {
+        this.name = name;
+        this.measureUnit = measureUnit;
+        this.quantity = quantity;
+        this.price = price;
+        this.isPerishable = isPerishable;
+        this.expirationDate = expirationDate;
+        this.manufacturingDate = manufacturingDate;
+    }
+
+    public ProductDtoIncoming() {}
 
     public String getName() {
         return name;

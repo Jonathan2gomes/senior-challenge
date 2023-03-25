@@ -33,6 +33,20 @@ public class Product {
     @Column(name = "manufacturing_date", nullable = false)
     private LocalDate ManufacturingrDate;
 
+    public Product(Long id, String name, MeasureUnit measureUnit, String quantity, BigDecimal price, Boolean isPerishable, LocalDate expirationDate, LocalDate manufacturingrDate) {
+        this.id = id;
+        this.name = name;
+        this.measureUnit = measureUnit;
+        this.quantity = quantity;
+        this.price = price;
+        this.isPerishable = isPerishable;
+        this.expirationDate = expirationDate;
+        ManufacturingrDate = manufacturingrDate;
+    }
+
+    public Product() {
+    }
+
     public Long getId() {
         return id;
     }
