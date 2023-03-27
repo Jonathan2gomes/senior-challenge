@@ -1,0 +1,21 @@
+
+â
+Ystock-control/src/main/java/com/sistemas/senior/stockcontrol/StockControlApplication.java,0\b\0ba90a147cbf1cd435dc542c520f3d74468cdad0
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+J
+stock-control/build.gradle,4\5\4534c6b66baa7e5204df390b81946bf051c6bf6a
+
+Ostock-control/src/main/java/com/sistemas/senior/stockcontrol/model/Product.java,c\4\c44ff9f193d19b958b620a6f46f0cb54498ea32c
+g
+7stock-control/src/main/resources/application.properties,6\0\6072288eb0c899bfd2ed4f43c6cffb5d2b148ea0
+g
+7stock-control-ui/src/app/product/product.component.html,8\8\8881ea40c18dcd65c5b5aa7a428013de55da372e
+Z
+*stock-control/src/main/resources/datal.sql,9\0\90f4a80d22850bcc8a0b9fcd88f77f02bd3cab24
+
+Ostock-control-ui/src/app/product/add-edit-product/add-edit-product.component.ts,2\b\2b205863d9fc3f8508f3c5bbef07e33325c70a73
+Å
+Qstock-control-ui/src/app/product/add-edit-product/add-edit-product.component.html,5\9\5911ff19e2501c51ed3ab70b3c2f79b2a476f2f3
+|
+Lstock-control-ui/src/app/product/add-edit-product/add-edit-product.module.ts,5\d\5d1e3c747e28adf11397b18ce0a83143c912a69d

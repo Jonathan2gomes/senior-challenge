@@ -12,17 +12,20 @@ export class AddEditProductComponent implements OnInit {
   @Input() displayAddModal: boolean = true;
   @Output() clickClose: EventEmitter<boolean> = new EventEmitter<boolean>();
 
-  date: Date | undefined;
+  // date: Date | undefined;
 
 
   productForm = this.fb.group( {
     name: ["", Validators.required],
     quantity: [0, Validators.required],
     price: [0, Validators.required],
-    expirationDate: ["", Validators.required],
+    expirationDate: ['04-04-04'  ],
     manufacturingDate: ["", Validators.required],
     perishable: ["", Validators.required]
   })
+  // expirationDate: new Date();
+  // manufacturingDate: Date | undefined;
+  // selectedValues: boolean;
   constructor(private fb: FormBuilder, private productService: ProductService) {}
 
   ngOnInit(): void {

@@ -1,1 +1,14 @@
-<app-product></app-product>
+
+<mat-toolbar color="primary">
+  <p-sidebar [(visible)]="sidebarVisible">
+    <h3>Menu</h3>
+    <p>
+      pagina 1
+    </p>
+    <p>
+      pagina 2
+    </p>
+  </p-sidebar>
+  <p-button (click)="sidebarVisible = true" icon="pi pi-bars"></p-button>
+</mat-toolbar>
+<router-outlet></router-outlet>

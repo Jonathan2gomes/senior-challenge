@@ -21,11 +21,4 @@ public enum MeasureUnit {
         this.abbreviation = abbreviation;
     }
 
-//    public static MeasureUnit validate(String measureUnit) {
-//        for (MeasureUnit measure : MeasureUnit.values()) {
-//            if(measure.toString().equalsIgnoreCase(measureUnit)) {
-//                return measure;
-//            }
-//        } throw new NotFoundException("not one of the values accepted for Enum class: [QUILOGRAMA, LITRO, UNIDADE] ");
-//    }
 }
